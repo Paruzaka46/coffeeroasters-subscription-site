@@ -23,19 +23,21 @@ const HomeProducts = () => {
     ]
 
     return (
-        <div className="relative mx-[165px]">
-            <div className="absolute font-fraunces bg-gradient-to-b from-black/50 to-light-cream text-transparent text-[155px] w-[95%] mx-[2.5%] bg-clip-text -z-10">our collection</div>
-            <div className="flex justify-between mb-[190px]">
+        <div className="relative desk:mx-[165px] tab:mx-[40px]">
+            <div className="absolute font-fraunces bg-gradient-to-b from-black/50 to-light-cream text-transparent desk:text-[155px] tab:text-[96px] desk:w-[95%] desk:mx-[2.5%] bg-clip-text -z-10">our collection</div>
+            <div className="flex desk:flex-row tab:flex-col desk:justify-between tab:items-center mb-[190px] desk:px-0 tab:px-[58px] desk:pt-0 tab:pt-[85px] desk:gap-0 tab:gap-[32px]">
                 {coffees.map((coffee, index) => {
                     return (
-                        <div className="text-center max-w-[255px]" key={index}>
-                            <img className="mb-[70px] mt-[126px]" src={coffee.img}/>
-                            <h4 className="mb-[24px] text-[24px] text-dark-grey-blue font-fraunces">
-                                {coffee.name}
-                            </h4>
-                            <p className="font-barlow">
-                                {coffee.desc}
-                            </p>
+                        <div className="desk:text-center flex desk:flex-col tab:flex-row items-center desk:max-w-[255px] desk:gap-0 tab:gap-9" key={index}>
+                            <img className="desk:mb-[70px] desk:mt-[126px] desk:w-auto tab:w-[255px] desk:mr-0" src={coffee.img}/>
+                            <div >
+                                <h4 className="mb-[24px] text-[24px] text-dark-grey-blue font-fraunces">
+                                    {coffee.name}
+                                </h4>
+                                <p className="font-barlow">
+                                    {coffee.desc}
+                                </p>
+                            </div>
                         </div>
                     )
                 })}

@@ -19,31 +19,42 @@ const HomeHow = () => {
 
     return (
         <div className="mx-[165px]">
-            <h4 className="text-grey text-[24px] mb-[95px] font-fraunces">How it works</h4>
-            {/* <svg className="mb-[82px]" xmlns="http://www.w3.org/2000/svg" width="761" height="3" viewBox="0 0 761 3" fill="none">
-                <path d="M0.5 1.5H760.5" stroke="#FDD6BA" stroke-width="2"/>
-            </svg> */}
-            <div className="flex gap-[95px]">
+            <h4 className="text-grey text-[24px] mb-[174px] font-fraunces">How it works</h4>
+            {/* <div className="flex">
+                {hows.map((how,index) => {
+                    return (
+                        <div>
+                            <svg className="" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                                <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    )
+                })}
+            </div> */}
+            <div className="flex">
                 {hows.map((how, index) => {
                     return (
-                        <div className="relative">
-                            <svg className="absolute -top-[100px]" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                                <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
-                            </svg>                      
+                        <div>
+                            <div className="relative flex items-center -top-[78px]">
+                                <svg className="" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                                    <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
+                                </svg>
+                                <div className={`w-full h-1 ${index < 2?'bg-pale-orange':'bg-white'} `}></div>
+                            </div>
                             <h2 className="text-[72px] font-fraunces mb-[38px] text-pale-orange">
                                 {how.number}
                             </h2>
                             <h4 className="font-fraunces text-[32px] text-dark-grey-blue mb-[42px] max-w-[255px]">
                                 {how.step}
                             </h4>
-                            <p className="text-grey font-barlow">
+                            <p className="text-grey font-barlow pr-[95px]">
                                 {how.desc}
                             </p>
                         </div>
                     )
                 })}
             </div>
-            <button>Create your plan</button>
+            <button className="font-fraunces text-[18px] px-[31px] py-[15px] bg-dark-cyan text-light-cream rounded-[6px] mt-[64px] mb-[216px]">Create your plan</button>
         </div>
     )
 }
