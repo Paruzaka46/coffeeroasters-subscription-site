@@ -1,4 +1,8 @@
+import { useMediaQuery } from "react-responsive"
+
 const HomeHow = () => {
+    const isNotMobile = useMediaQuery({query: '(min-width: 426px)'})
+
     const hows = [
         {   
             number: '01',
@@ -18,8 +22,8 @@ const HomeHow = () => {
     ]
 
     return (
-        <div className="mx-[165px]">
-            <h4 className="text-grey text-[24px] mb-[174px] font-fraunces">How it works</h4>
+        <div className="desk:mx-[165px] tab:mx-[40px] mobile:mx-[24px] tab:text-start mobile:text-center">
+            <h4 className="text-grey text-[24px] desk:mb-[174px] tab:mb-[119px] mobile:mb-[80px] font-fraunces">How it works</h4>
             {/* <div className="flex">
                 {hows.map((how,index) => {
                     return (
@@ -31,30 +35,36 @@ const HomeHow = () => {
                     )
                 })}
             </div> */}
-            <div className="flex">
+            <div className="flex tab:flex-row mobile:flex-col tab:gap-0 mobile:gap-[56px]">
                 {hows.map((how, index) => {
                     return (
-                        <div>
-                            <div className="relative flex items-center -top-[78px]">
+                        <div className="w-[auto]">
+                            {isNotMobile && <div className="relative flex items-center desk:-top-[78px] tab:-top-[48px]">
                                 <svg className="" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                                     <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
                                 </svg>
-                                <div className={`w-full h-1 ${index < 2?'bg-pale-orange':'bg-white'} `}></div>
-                            </div>
-                            <h2 className="text-[72px] font-fraunces mb-[38px] text-pale-orange">
+                            <div className={`w-full h-1 ${index < 2?'bg-pale-orange':'bg-white'} `}></div>
+                            </div>}
+                            {/* <div className="relative flex items-center desk:-top-[78px] tab:-top-[48px]">
+                                <svg className="" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                                    <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
+                                </svg>
+                            <div className={`w-full h-1 ${index < 2?'bg-pale-orange':'bg-white'} `}></div>
+                            </div> */}
+                            <h2 className="text-[72px] font-fraunces tab:mb-[38px] mobile:mb-[24px] text-pale-orange">
                                 {how.number}
                             </h2>
-                            <h4 className="font-fraunces text-[32px] text-dark-grey-blue mb-[42px] max-w-[255px]">
+                            <h4 className="font-fraunces desk:text-[32px] mobile:text-[28px] text-dark-grey-blue tab:mb-[42px] mobile:mb-[24px] tab:max-w-[255px] tab:mx-0 mobile:mx-auto desk:pr-0 tab:pr-[15px]">
                                 {how.step}
                             </h4>
-                            <p className="text-grey font-barlow pr-[95px]">
+                            <p className="text-grey font-barlow desk:pr-[95px] tab:pr-[10px] desk:text-[16px] tab:text-[15px]">
                                 {how.desc}
                             </p>
                         </div>
                     )
                 })}
             </div>
-            <button className="font-fraunces text-[18px] px-[31px] py-[15px] bg-dark-cyan text-light-cream rounded-[6px] mt-[64px] mb-[216px]">Create your plan</button>
+            <button className="font-fraunces text-[18px] px-[31px] py-[15px] bg-dark-cyan text-light-cream rounded-[6px] desk:mt-[64px] tab:mt-[44px] mobile:mt-[79px] desk:mb-[216px] tab:mb-[144px] mobile:mb-[120px]">Create your plan</button>
         </div>
     )
 }

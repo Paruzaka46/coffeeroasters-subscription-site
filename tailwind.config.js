@@ -19,9 +19,9 @@ export default {
         'grey': 'rgb(131, 136, 143)'
       },
       backgroundImage: {
-        'home-hero-desk': "url('assets/home/desktop/image-hero-coffeepress.jpg')",
-        'home-hero-tab' : "url('assets/home/tablet/image-hero-coffeepress.jpg')",
-        'home-hero-mob' : "url('assets/home/mbile/image-hero-coffeepress.jpg')"
+        'home-hero-desk': "url('/assets/home/desktop/image-hero-coffeepress.jpg')",
+        'home-hero-tab' : "url('/assets/home/tablet/image-hero-coffeepress.jpg')",
+        'home-hero-mob' : "url('/assets/home/mobile/image-hero-coffeepress.jpg')"
 
       },
       fontFamily: {
