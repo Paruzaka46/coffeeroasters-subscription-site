@@ -27,17 +27,17 @@ const AboutHead = () => {
     ]
 
     return (
-        <div className="mx-[24px] tab:mx-[40px] text-center tab:text-start mb-[120px] tab:mb-[144px]">
+        <div className="mx-[24px] tab:mx-[40px] desk:mx-[165px] text-center tab:text-start mb-[120px] tab:mb-[144px] desk:mb-[168px]">
             <h3 className="text-grey font-fraunces text-[24px] mb-[72px] leading-[32px]">Our headquarters</h3>
             <div className="flex flex-col tab:flex-row gap-[80px] tab:gap-0 tab:justify-between ">
                 {headquarters.map((head, index) => {
                     return (
                         <div className="flex flex-col items-center tab:items-start ">
                             <img className="mb-[47px]" src={head.img}/>
-                            <h2 className="font-fraunces text-dark-grey-blue text-[28px] tab:text-[24px] mb-[22px]">
+                            <h2 className="font-fraunces text-dark-grey-blue text-[28px] tab:text-[24px] desk:text-[32px] desk:leading-[36px] mb-[22px]">
                                 {head.country}
                             </h2>
-                            <div className="text-[16px] font-barlow text-grey">
+                            <div className="text-[16px] leading-[26px] font-barlow text-grey">
                                 <p>{head.address}</p>
                                 <p>{head.city}</p>
                                 <p>{head.extraInfo}</p>
