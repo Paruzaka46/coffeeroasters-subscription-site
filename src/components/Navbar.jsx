@@ -28,7 +28,7 @@ const Navbar = () => {
 
     const itsMobile = (
         <div className="relative flex justify-between items-center px-[24px] py-[32px]">
-            <img src="/assets/shared/desktop/logo.svg"/>
+            <img className="w-[163px]" src="/assets/shared/desktop/logo.svg"/>
             <input onClick={() => {setOpenBurger(!openBurger)}} type="image" src={!openBurger?"/assets/shared/mobile/icon-hamburger.svg":"/assets/shared/mobile/icon-close.svg"}/>
             <ul className={`absolute bg-gradient-to-b from-white to-white/70 z-20 left-0 text-[24px] text-dark-grey-blue font-fraunces w-full top-[90px] flex flex-col items-center gap-[32px] ${openBurger?"h-[100vh] py-[40px]":"h-0 py-0 overflow-hidden"} transition-all`}>
                 <li className="hover:text-dark-grey-blue transition-all"><a href="#">Home</a></li>

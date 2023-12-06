@@ -21,8 +21,13 @@ export default {
       backgroundImage: {
         'home-hero-desk': "url('/assets/home/desktop/image-hero-coffeepress.jpg')",
         'home-hero-tab' : "url('/assets/home/tablet/image-hero-coffeepress.jpg')",
-        'home-hero-mob' : "url('/assets/home/mobile/image-hero-coffeepress.jpg')"
-
+        'home-hero-mob' : "url('/assets/home/mobile/image-hero-coffeepress.jpg')",
+        'about-hero-desk': "url('/assets/about/desktop/image-hero-whitecup.jpg')",
+        'about-hero-tab': "url('/assets/about/tablet/image-hero-whitecup.jpg')",
+        'about-hero-mob': "url('/assets/about/mobile/image-hero-whitecup.jpg')",
+        'quality-desktop': "url('/assets/about/desktop/bg-quality.png')",
+        'quality-tab': "url('/assets/about/tablet/bg-quality.png')",
+        'quality-mobile': "url('/assets/about/mobile/bg-quality.png')"
       },
       fontFamily: {
         'fraunces': ['Fraunces', 'serif'],
