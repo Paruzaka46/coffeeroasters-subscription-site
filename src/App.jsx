@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
+import Plan from './components/Plan'
 import Footer from './components/Footer'
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Navbar/>
       <div className='text-[16px]'>
         {/* <Home/> */}
-        <About/>
+        {/* <About/> */}
+        <Plan/>
       </div>
       <Footer/>
     </div>

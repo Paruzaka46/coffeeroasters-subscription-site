@@ -33,7 +33,7 @@ const Navbar = () => {
             <ul className={`absolute bg-gradient-to-b from-white to-white/70 z-20 left-0 text-[24px] text-dark-grey-blue font-fraunces w-full top-[90px] flex flex-col items-center gap-[32px] ${openBurger?"h-[100vh] py-[40px]":"h-0 py-0 overflow-hidden"} transition-all`}>
                 <li className="hover:text-dark-grey-blue transition-all"><a href="#">Home</a></li>
                 <li className="hover:text-dark-grey-blue transition-all"><a href="#">About Us</a></li>
-                <li className="hover:text-dark-grey-blue transition-all"><a href="#">Create your Plan</a></li>
+                <li className="hover:text-dark-grey-blue transition-all"><a href="#">Create Your Plan</a></li>
             </ul>
         </div>
     )

@@ -25,9 +25,16 @@ export default {
         'about-hero-desk': "url('/assets/about/desktop/image-hero-whitecup.jpg')",
         'about-hero-tab': "url('/assets/about/tablet/image-hero-whitecup.jpg')",
         'about-hero-mob': "url('/assets/about/mobile/image-hero-whitecup.jpg')",
+        'plan-hero-desk': "url('/assets/plan/desktop/image-hero-blackcup.jpg')",
+        'plan-hero-tab': "url('/assets/plan/tablet/image-hero-blackcup.jpg')",
+        'plan-hero-mob': "url('/assets/plan/mobile/image-hero-blackcup.jpg')",
+
         'quality-desktop': "url('/assets/about/desktop/bg-quality.png')",
         'quality-tab': "url('/assets/about/tablet/bg-quality.png')",
-        'quality-mobile': "url('/assets/about/mobile/bg-quality.png')"
+        'quality-mobile': "url('/assets/about/mobile/bg-quality.png')",
+        'plan-step-desk': "url('/assets/plan/desktop/bg-steps.png')",
+        'plan-step-tab': "url('/assets/plan/tablet/bg-steps.png')",
+        'plan-step-mob': "url('/assets/plan/mobile/bg-steps.png')",
       },
       fontFamily: {
         'fraunces': ['Fraunces', 'serif'],
