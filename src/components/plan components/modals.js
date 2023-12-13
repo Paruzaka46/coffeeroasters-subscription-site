@@ -2,6 +2,8 @@ const modals = [
     {
         question: 'How do you drink your coffee?',
         name: 'preferences',
+        listName: 'Preferences',
+        number: '01',
         choices: [
             {
                 value: 'capsule_1',
@@ -23,10 +25,12 @@ const modals = [
     {
         question: 'What type of coffee?',
         name: 'beanType',
+        listName: 'Bean Type',
+        number: '02',
         choices: [
             {
                 value: 'ingleOrigin_2',
-                title: 'Single origin',
+                title: 'Single Origin',
                 desc: 'Distinct, high quality coffee from a specific family-owned farm.'
             },
             {
@@ -44,6 +48,8 @@ const modals = [
     {
         question: 'How much would you like?',
         name: 'quantity',
+        listName: 'Quantity',
+        number: '03',
         choices: [
             {
                 value: '250g_3',
@@ -65,6 +71,8 @@ const modals = [
     {
         question: 'Want us to grind them?',
         name: 'grindOption',
+        listName: 'Grind Option',
+        number: '04',
         choices: [
             {
                 value: 'wholebean_4',
@@ -86,21 +94,29 @@ const modals = [
     {
         question: 'How often should we deliver?',
         name: 'deliveries',
+        listName: 'Deliveries',
+        number: '05',
         choices: [
             {
                 value: 'everyWeek_5',
                 title: 'Every week',
-                desc: '$14.00 per shipment. Includes free first-class shipping.'
+                desc: '$7.20 per shipment. Includes free first-class shipping.',
+                desc1: '$13.00 per shipment. Includes free first-class shipping.',
+                desc2: '$22.00 per shipment. Includes free first-class shipping.'
             },
             {
                 value: 'every2Weeks_5',
                 title: 'Every 2 weeks',
-                desc: '$17.25 per shipment. Includes free priority shipping.'
+                desc: '$9.60 per shipment. Includes free priority shipping.',
+                desc1: '$17.50 per shipment. Includes free first-class shipping.',
+                desc2: '$32.00 per shipment. Includes free first-class shipping.'
             },
             {
                 value: 'everyMonth_5',
                 title: 'Every month',
-                desc: '$22.50 per shipment. Includes free priority shipping.'
+                desc: '$12.00 per shipment. Includes free priority shipping.',
+                desc1: '$22.00 per shipment. Includes free first-class shipping.',
+                desc2: '$42.00 per shipment. Includes free first-class shipping.'
             }
         ]
     },

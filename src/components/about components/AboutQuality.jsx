@@ -10,8 +10,6 @@ const AboutQuality = () => {
                 <img className="rounded-[10px] mx-auto desk:mx-0 max-w-[280px] tab:max-w-none" src={islaptop?'/assets/about/desktop/image-quality.jpg':
                 isTab?'/assets/about/tablet/image-quality.jpg':'/assets/about/mobile/image-quality.jpg'}/>
             </div>
-            {/* <img className="relative bottom-[78px] tab:bottom-[200px] rounded-[10px] mx-auto" src={islaptop?'/assets/about/desktop/image-quality.jpg':
-            isTab?'/assets/about/tablet/image-quality.jpg':'/assets/about/mobile/image-quality.jpg'}/> */}
             <div className="flex flex-col gap-[24px] desk:pt-[85px] text-light-cream text-center desk:max-w-[540px]">
                 <h2 className="font-fraunces text-[28px] tab:text-[32px] desk:text-[40px] leading-[28px] tab:leading-[48px]">Uncompromising quality</h2>
                 <p className="font-barlow text-[15px] desk:text-[16px] leading-[25px] desk:leading-[26px] text-light-cream/80">Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>

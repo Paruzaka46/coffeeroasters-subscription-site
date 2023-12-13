@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
@@ -14,9 +15,11 @@ function App() {
     <div>
       <Navbar/>
       <div className='text-[16px]'>
-        {/* <Home/> */}
-        {/* <About/> */}
-        <Plan/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/plan" element={<Plan/>}/>
+       </Routes>
       </div>
       <Footer/>
     </div>

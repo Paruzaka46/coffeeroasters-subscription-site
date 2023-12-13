@@ -22,14 +22,14 @@ const PlanHow = () => {
     ]
 
     return (
-        <div className="desk:mx-[80px] px-[24px] desk:px-[85px] py-[80px] bg-plan-step-mob tab:bg-plan-step-tab desk:bg-plan-step-desk bg-cover tab:text-start mobile:text-center mb-[120px] desk:rounded-[10px]">
+        <div className="desk:mx-[80px] px-[24px] desk:px-[85px] py-[80px] bg-plan-step-mob tab:bg-plan-step-tab desk:bg-plan-step-desk bg-cover tab:text-start mobile:text-center mb-[120px] desk:mb-[165px] desk:rounded-[10px]">
             <div className="flex tab:flex-row mobile:flex-col tab:gap-0 mobile:gap-[56px] desk:mt-[80px]">
                 {hows.map((how, index) => {
                     return (
                         <div key={index} className="w-[auto]">
                             {isNotMobile && <div className="relative flex items-center desk:-top-[78px] tab:-top-[48px]">
                                 <svg className="" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                                    <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"/>
+                                    <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth="2"/>
                                 </svg>
                             <div className={`w-full h-1 ${index < 2?'bg-pale-orange':' bg-transparent'} `}></div>
                             </div>}

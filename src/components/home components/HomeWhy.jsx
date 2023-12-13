@@ -42,21 +42,6 @@ const HomeWhy = () => {
                     })}
                 </div>
             </div>
-            {/* <div className="flex gap-[30px]">
-                {whys.map((why, index) => {
-                    return (
-                        <div key={index} className=" bg-dark-cyan px-[47px] pb-[48px]">
-                            <img className={`mx-auto w-[83px] ${index === 2?'mb-[67px] mt-[83px]':'mb-[56px] mt-[72px]'} `} src={why.img}/>
-                            <h4 className="font-fraunces text-[24px] mb-[24px]">
-                                {why.name}
-                            </h4>
-                            <p className="font-barlow">
-                                {why.desc}
-                            </p>
-                        </div>
-                    )
-                })}
-            </div> */}
         </div>
     )
 }

@@ -32,7 +32,7 @@ const AboutHead = () => {
             <div className="flex flex-col tab:flex-row gap-[80px] tab:gap-0 tab:justify-between ">
                 {headquarters.map((head, index) => {
                     return (
-                        <div className="flex flex-col items-center tab:items-start ">
+                        <div key={index} className="flex flex-col items-center tab:items-start grow">
                             <img className="mb-[47px]" src={head.img}/>
                             <h2 className="font-fraunces text-dark-grey-blue text-[28px] tab:text-[24px] desk:text-[32px] desk:leading-[36px] mb-[22px]">
                                 {head.country}
